@@ -1,21 +1,19 @@
-<script>
-        $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
+$("#carouselButton").click(function(){
+    if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+        $("#mycarousel").carousel('pause');
+        $("#carouselButton").children("span").removeClass('fa-pause');
+        $("#carouselButton").children("span").addClass('fa-play');
+    }
+    else if ($("#carouselButton").children("span").hasClass('fa-play')){
+        $("#mycarousel").carousel('cycle');
+        $("#carouselButton").children("span").removeClass('fa-play');
+        $("#carouselButton").children("span").addClass('fa-pause');                    
+    }
+});
 
-        $("#ReserveButton").click(function(){
-            $('#ReserveModal').modal('show');
-        });
-        $("#loginbtn").click(function(){
-            $('#loginModal').modal('show');
-        });
-    </script>
+$("#ReserveButton").click(function(){
+$('#ReserveModal').modal('show');
+});
+$("#loginbtn").click(function(){
+$('#loginModal').modal('show');
+});
